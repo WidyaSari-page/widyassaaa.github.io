@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio Widya Sari — Web Developer & Network Enthusiast" />
+  <title>Widya Sari — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="logo">widya<span>.dev</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting">Halo, saya</p>
+      <h1 class="hero-title">Widya <span class="accent">Sari</span></h1>
+      <p class="hero-subtitle">
+        Web Developer &amp; Network Enthusiast yang fokus membangun antarmuka web
+        yang cepat, aksesibel, dan menyenangkan — dengan pemahaman pendukung
+        di bidang system administration dan DevOps.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Lihat Karya</a>
+        <a href="#contact" class="btn btn-ghost">Hubungi Saya</a>
+      </div>
+      <div class="hero-status">
+        <span class="dot"></span>
+        <span>Tersedia untuk proyek freelance &amp; kolaborasi</span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="code-card">
+        <div class="code-dots"><span></span><span></span><span></span></div>
+        <pre><code><span class="c-key">const</span> <span class="c-var">dev</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">"Widya"</span>,
+  <span class="c-prop">role</span>: <span class="c-str">"Web Developer"</span>,
+  <span class="c-prop">stack</span>: [<span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>, <span class="c-str">"JS"</span>],
+  <span class="c-prop">tools</span>: [<span class="c-str">"Docker"</span>, <span class="c-str">"AWS"</span>],
+  <span class="c-prop">coffee</span>: <span class="c-num">Infinity</span>
+};</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section reveal" id="about">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="section-line"></div>
+    </div>
+    <p class="about-text">
+      Saya <strong>Widya Sari</strong>, siswi SMK jurusan Teknik Komputer dan Jaringan
+      dengan minat utama pada <strong>Web Development</strong>, serta memiliki pemahaman
+      pendukung di bidang <strong>system administration</strong> dan <strong>DevOps</strong>.
+    </p>
+    <p class="about-text">
+      Terbiasa membangun dan mengelola website menggunakan HTML, CSS, JavaScript, dan Python.
+      Memahami dasar pengelolaan sistem Linux dan konfigurasi jaringan. Memiliki kemampuan
+      belajar cepat, komunikatif, dan aktif dalam berbagai organisasi serta kegiatan kepemimpinan.
+    </p>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section reveal" id="projects">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Proyek Terpilih</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects">
+      <article class="project clickable" data-modal="project-1" data-tilt>
+        <span class="project-icon">☁️</span>
+        <h3>Cloud Web Deployment &amp; SysAdmin</h3>
+        <p>Deploy dan konfigurasi server virtual (VPS / EC2 Ubuntu 24.04 LTS) untuk menjalankan layanan web dengan Nginx &amp; Apache, termasuk domain pointing dan HTTPS/SSL.</p>
+        <div class="tags">
+          <span>Ubuntu</span><span>Nginx</span><span>SSL</span>
+        </div>
+        <span class="click-hint">Klik untuk detail →</span>
+      </article>
+
+      <article class="project clickable" data-modal="project-2" data-tilt>
+        <span class="project-icon">🐳</span>
+        <h3>Wishlist &amp; Library App</h3>
+        <p>Aplikasi multi-container dengan Docker Compose: integrasi Frontend, Backend Python, PostgreSQL, dan Redis.</p>
+        <div class="tags">
+          <span>Docker</span><span>Python</span><span>PostgreSQL</span>
+        </div>
+        <span class="click-hint">Klik untuk detail →</span>
+      </article>
+
+      <article class="project clickable" data-modal="project-3" data-tilt>
+        <span class="project-icon">🚀</span>
+        <h3>Cloud Publishing &amp; AWS</h3>
+        <p>Build, tag, dan push Docker image ke Docker Hub. Deploy aplikasi microservices pada AWS EC2 Ubuntu.</p>
+        <div class="tags">
+          <span>AWS EC2</span><span>Docker Hub</span><span>Microservices</span>
+        </div>
+        <span class="click-hint">Klik untuk detail →</span>
+      </article>
+
+      <article class="project clickable" data-modal="project-4" data-tilt>
+        <span class="project-icon">🛡️</span>
+        <h3>Network Security &amp; Pentest</h3>
+        <p>Simulasi pengujian keamanan jaringan dan penetration testing menggunakan Kali Linux dan Metasploit Framework.</p>
+        <div class="tags">
+          <span>Kali Linux</span><span>Metasploit</span><span>Security</span>
+        </div>
+        <span class="click-hint">Klik untuk detail →</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section reveal" id="experience">
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Pengalaman Organisasi</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item clickable" data-modal="exp-1">
+        <h3>Komunitas IT SMK Negeri — KITS</h3>
+        <div class="period">2025 – 2026</div>
+        <ul>
+          <li>Anggota Seksi Multimedia</li>
+          <li>Sekretaris Formatur</li>
+          <li>Wakil Ketua Pelaksana Program Kerja SBM</li>
+          <li>Penanggung jawab Sie Multimedia</li>
+          <li>Master of Ceremony (MC) internal komunitas</li>
+        </ul>
+        <span class="click-hint">Klik untuk detail →</span>
+      </div>
+
+      <div class="timeline-item clickable" data-modal="exp-2">
+        <h3>Organisasi SMP Negeri</h3>
+        <div class="period">2022 – 2024</div>
+        <ul>
+          <li><strong>OSIS — Bendahara &amp; Plt. Pendukung Pimpinan</strong></li>
+          <li><strong>Kader Adiwiyata — Anggota</strong></li>
+          <li><strong>Pramuka — Anggota Aktif</strong></li>
+          <li><strong>Satuan Tugas Anti Narkoba — Ketua</strong></li>
+          <li><strong>Palang Merah Remaja (PMR) — Sekretaris</strong></li>
+        </ul>
+        <span class="click-hint">Klik untuk detail →</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section reveal" id="skills">
+    <div class="section-head">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Keahlian</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-group">
+      <h4>Hard Skills</h4>
+      <div class="skills-list">
+        <span class="skill clickable" data-modal="skill-docker"><span class="bullet"></span>Docker &amp; Compose</span>
+        <span class="skill clickable" data-modal="skill-aws"><span class="bullet"></span>AWS (EC2, RDS, S3)</span>
+        <span class="skill clickable" data-modal="skill-linux"><span class="bullet"></span>Linux Ubuntu Server</span>
+        <span class="skill clickable" data-modal="skill-webserver"><span class="bullet"></span>Nginx &amp; Apache</span>
+        <span class="skill clickable" data-modal="skill-db"><span class="bullet"></span>PostgreSQL &amp; MySQL</span>
+        <span class="skill clickable" data-modal="skill-redis"><span class="bullet"></span>Redis</span>
+        <span class="skill clickable" data-modal="skill-frontend"><span class="bullet"></span>HTML, CSS, JavaScript</span>
+        <span class="skill clickable" data-modal="skill-python"><span class="bullet"></span>Python</span>
+        <span class="skill clickable" data-modal="skill-network"><span class="bullet"></span>MikroTik &amp; Routing</span>
+        <span class="skill clickable" data-modal="skill-security"><span class="bullet"></span>Kali Linux &amp; Metasploit</span>
+        <span class="skill clickable" data-modal="skill-git"><span class="bullet"></span>Git &amp; GitHub</span>
+        <span class="skill clickable" data-modal="skill-hardware"><span class="bullet"></span>Crimping &amp; Fusion Splicer</span>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <h4>Soft Skills</h4>
+      <div class="skills-list">
+        <span class="skill soft clickable" data-modal="soft-leadership"><span class="bullet"></span>Leadership</span>
+        <span class="skill soft clickable" data-modal="soft-communication"><span class="bullet"></span>Communication</span>
+        <span class="skill soft clickable" data-modal="soft-teamwork"><span class="bullet"></span>Teamwork</span>
+        <span class="skill soft clickable" data-modal="soft-fastlearner"><span class="bullet"></span>Fast Learner</span>
+        <span class="skill soft clickable" data-modal="soft-responsibility"><span class="bullet"></span>Responsibility</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section class="section reveal" id="achievements">
+    <div class="section-head">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Prestasi &amp; Sertifikasi</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="cards-grid">
+      <div class="info-card clickable" data-modal="ach-1">
+        <h3><span class="emoji">🏆</span> Juara 1 Paralel Kelas 9</h3>
+        <p class="info-sub">SMP Negeri · 2025</p>
+        <p class="info-desc">Peringkat pertama paralel kelas 9 berdasarkan nilai akademik.</p>
+        <span class="click-hint">Klik untuk detail →</span>
+      </div>
+
+      <div class="info-card clickable" data-modal="ach-2">
+        <h3><span class="emoji">🥈</span> Juara Tingkat Kabupaten</h3>
+        <p class="info-sub">Agustus 2024</p>
+        <p class="info-desc">Kompetisi tingkat kabupaten bidang akademik/non-akademik.</p>
+        <span class="click-hint">Klik untuk detail →</span>
+      </div>
+
+      <div class="info-card clickable" data-modal="ach-3">
+        <h3><span class="emoji">🥉</span> Juara 3 Penggalang se-Jawa Timur</h3>
+        <p class="info-sub">2024</p>
+        <p class="info-desc">Kompetisi Pramuka tingkat Penggalang se-Jawa Timur.</p>
+        <span class="click-hint">Klik untuk detail →</span>
+      </div>
+
+      <div class="info-card clickable" data-modal="cert-1">
+        <h3><span class="emoji">📜</span> Network Fundamental</h3>
+        <p class="info-sub">Aguna Course</p>
+        <p class="info-desc">Sertifikasi dasar-dasar jaringan komputer.</p>
+        <span class="click-hint">Klik untuk detail →</span>
+      </div>
+
+      <div class="info-card clickable" data-modal="cert-2">
+        <h3><span class="emoji">📜</span> Linux Fundamental</h3>
+        <p class="info-sub">Aguna Course</p>
+        <p class="info-desc">Sertifikasi dasar sistem operasi Linux.</p>
+        <span class="click-hint">Klik untuk detail →</span>
+      </div>
+
+      <div class="info-card clickable" data-modal="cert-3">
+        <h3><span class="emoji">📜</span> Virtual Machine Fundamental</h3>
+        <p class="info-sub">Aguna Course</p>
+        <p class="info-desc">Sertifikasi dasar virtualisasi &amp; VM.</p>
+        <span class="click-hint">Klik untuk detail →</span>
+      </div>
+
+      <div class="info-card clickable" data-modal="cert-4">
+        <h3><span class="emoji">📜</span> Simulasi Jaringan PNETLab</h3>
+        <p class="info-sub">Aguna Course</p>
+        <p class="info-desc">Simulasi jaringan menggunakan PNETLab.</p>
+        <span class="click-hint">Klik untuk detail →</span>
+      </div>
+
+      <div class="info-card clickable" data-modal="cert-5">
+        <h3><span class="emoji">📜</span> HTML, CSS, JavaScript</h3>
+        <p class="info-sub">freeCodeCamp</p>
+        <p class="info-desc">Sertifikasi Responsive Web Design.</p>
+        <span class="click-hint">Klik untuk detail →</span>
+      </div>
+
+      <div class="info-card clickable" data-modal="cert-6">
+        <h3><span class="emoji">🎓</span> Bootcamp MTCNA</h3>
+        <p class="info-sub">MikroTik · 2026</p>
+        <p class="info-desc">Pelatihan intensif jaringan &amp; router MikroTik.</p>
+        <span class="click-hint">Klik untuk detail →</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section reveal" id="contact">
+    <div class="contact-wrap">
+      <h2 class="contact-title">Mari Berkolaborasi</h2>
+      <p class="contact-text">
+        Punya proyek menarik, ingin berdiskusi soal web, atau sekadar menyapa?
+        Kirim pesan — saya biasanya membalas dalam 24 jam.
+      </p>
+      <a href="mailto:widyasari@gmail.com" class="btn btn-primary contact-btn">
+        widyasari@gmail.com
+      </a>
+      <div class="socials">
+        <a href="https://github.com/WidyaSari-page" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://instagram.com/_widyassaaa" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Widya Sari — Dibuat dengan <span class="heart">♥</span> dan rasa penasaran.</p>
+  </footer>
+
+  <!-- ===== MODAL ===== -->
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Tutup">✕</button>
+
+      <div class="modal-scroll">
+        <div class="modal-header">
+          <span class="modal-icon" id="modalIcon">📁</span>
+          <div>
+            <h3 class="modal-title" id="modalTitle">Judul</h3>
+            <p class="modal-sub" id="modalSub"></p>
+          </div>
+        </div>
+
+        <!-- Galeri foto -->
+        <div class="modal-gallery" id="modalGallery"></div>
+
+        <!-- Deskripsi -->
+        <div class="modal-body" id="modalBody"></div>
+
+        <!-- Tags -->
+        <div class="modal-tags" id="modalTags"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
